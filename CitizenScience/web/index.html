@@ -1,0 +1,67 @@
+<html data-ng-app="myApp">
+  <head>
+    <title>Home Page</title>
+    <meta charset="ISO-8859-1">
+    <title>Scientist Entry Map</title>
+    <link rel="stylesheet" href="ScientistMapPage.css"/>
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="bootstrap-responsive.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDVgNI2snXEm8Cu5y-dxk0Y1ep9Iv3SOC4&libraries=drawing,geometry,places" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+
+    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript"  src="js/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/angular-modal-service.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-0.6.min.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-tpls-2.2.0.js"></script>
+    <script type="text/javascript" src="js/myApp.js"></script>
+
+    <script type="text/javascript" src="js/ng-map.min.js"></script>
+
+  </head>
+  <body ng-controller="HomeController as home">
+
+
+  <div  ng-model="message">
+    <h1 class="h1">Welcome to Data Collection Platform</h1>
+
+    <br>
+    <a href="/Login.html">Citizen</a>
+    <a href="/SLoginPage.html">Scientist</a>
+
+
+  </div>
+
+  <div id="main">
+
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+    <div ng-view></div>
+
+  </div>
+
+
+
+
+  </body>
+</html>

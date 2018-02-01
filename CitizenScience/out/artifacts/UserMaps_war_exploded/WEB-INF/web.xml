@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>UserMaps</display-name>
+  <servlet>
+    <servlet-name>loc</servlet-name>
+    <servlet-class>com.Presentation.LocationInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loc</servlet-name>
+    <url-pattern>/LocationInfoPath</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>com.Presentation.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/LoginPath</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.Presentation.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <servlet-name>rect</servlet-name>
+    <servlet-class>com.Presentation.RectangleCor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>rect</servlet-name>
+    <url-pattern>/RectangleCor</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FailedCor</display-name>
+    <servlet-name>FailedCor</servlet-name>
+    <servlet-class>com.Presentation.FailedCor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FailedCor</servlet-name>
+    <url-pattern>/FailedCor</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AirPollutionData</display-name>
+    <servlet-name>AirPollutionData</servlet-name>
+    <servlet-class>com.Presentation.AirPollutionData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AirPollutionData</servlet-name>
+    <url-pattern>/AirPollutionData</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Logout</display-name>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.Presentation.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  
+
+    <servlet>
+        <servlet-name>SciLoginServlet</servlet-name>
+        <servlet-class>com.Presentation.SciLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SciLoginServlet</servlet-name>
+        <url-pattern>/SciLoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>ScientistMapServlet</servlet-name>
+        <servlet-class>com.Presentation.ScientistMapServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScientistMapServlet</servlet-name>
+        <url-pattern>/ScientistMapServlet</url-pattern>
+    </servlet-mapping>
+  
+  
+  
+</web-app>

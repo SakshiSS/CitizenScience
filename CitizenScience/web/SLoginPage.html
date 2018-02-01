@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="bootstrap-responsive.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript"  src="js/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/angular-modal-service.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-0.6.min.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-tpls-2.2.0.js"></script>
+
+    <style>
+        #page {
+            margin-left:auto;
+            margin-right:auto;
+            margin-top : 100px;
+            margin-bottom: auto;
+            width:960px;
+        }
+
+    </style>
+
+
+</head>
+<body class="container-fluid" >
+<form action="SciLoginServlet" method="post" name="LoginForm">
+<div id="page">
+<table>
+    <tr><td>UserName:</td><td><input type="text" class="input-block-level input-xlarge" name="txtUname" id="txtUname" value=""/></td></tr>
+    <tr><td>Password :</td><td><input type="password" class="input-block-level input-xlarge" name="txtPwd" id="txtPwd" value=""/></td></tr>
+    <tr><td><button type="submit" class="btn btn-primary" name="btnLogin">Login</button></td>
+        <td><button type="submit" class="btn btn-primary" name="btnRegister" id="btnRegister">Register</button></td></tr>
+    <tr><td></td><td></td></tr>
+    <tr><td><label id="error" name="error" vlaue=""></label></td></tr>
+
+</table>
+</div>
+</form>
+</body>
+</html>
